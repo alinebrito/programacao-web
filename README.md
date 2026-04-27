@@ -5,3 +5,6 @@
 
 
 [Roteiro — Minha primeira página pessoal](roteiro-minha-primeira-home-page.md)
+
+[Roteiro — Estilizando minha página pessoal](roteiro-estilos-e-seletores.md)
+
