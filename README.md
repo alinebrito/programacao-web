@@ -2,3 +2,6 @@
 
 
 [Roteiro — Primeiros passos com CSS](roteiro-primeiros-passos-css.md)
+
+
+[Roteiro — Minha primeira página pessoal](roteiro-minha-primeira-home-page.md)
