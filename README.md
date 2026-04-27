@@ -8,3 +8,6 @@
 
 [Roteiro — Estilizando minha página pessoal](roteiro-estilos-e-seletores.md)
 
+[Roteiro — Introdução ao Tailwind CSS](roteiro-tailwind.md)
+
+
