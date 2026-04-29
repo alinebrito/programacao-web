@@ -12,7 +12,7 @@ Você aprenderá:
 - Como identificar padrões de espaçamento, cores e tamanhos
 
 
-# 🧠 O que é Tailwind CSS?
+# O que é Tailwind CSS?
 
 O **Tailwind CSS** é um framework de estilização.
 
@@ -212,46 +212,29 @@ O título principal geralmente usa `<h1>`.
 
 ## Explicando cada comando
 
-### `text-3xl`
-
-Define tamanho da fonte.
-
-Equivale aproximadamente a:
+`text-3xl` define tamanho da fonte. Equivale aproximadamente a:
 
 ```css
 font-size: 30px;
 ```
 
----
-
-### `text-center`
-
-Centraliza o texto.
+`text-center` centraliza o texto:
 
 ```css
 text-align: center;
 ```
 
----
-
-### `font-bold`
-
-Deixa a fonte em negrito.
+`font-bold` deixa a fonte em negrito.
 
 ```css
 font-weight: bold;
 ```
 
----
-
-### `text-slate-700`
-
-Define a cor do texto.
+`text-slate-700` define a cor do texto.
 
 - `slate` = tom de cinza azulado
 - `700` = intensidade escura
 
----
 
 ## Código completo
 
@@ -261,13 +244,11 @@ Define a cor do texto.
 </h1>
 ```
 
----
 
 # Passo 5 — Inserindo a imagem
 
 A imagem normalmente representa o perfil do aluno.
 
----
 
 ## CSS tradicional
 
@@ -282,8 +263,6 @@ A imagem normalmente representa o perfil do aluno.
 }
 ```
 
----
-
 ## Tailwind
 
 ```html
@@ -293,59 +272,36 @@ A imagem normalmente representa o perfil do aluno.
 >
 ```
 
----
-
 ## Explicando cada comando
 
-### `w-48`
-
-Define a largura.
+`w-48` define a largura:
 
 ```css
 width: 192px;
+
 ```
 
----
-
-### `rounded-full`
-
-Transforma a imagem em círculo.
+`rounded-full` Transforma a imagem em círculo:
 
 ```css
 border-radius: 9999px;
 ```
 
----
-
-### `border-4`
-
-Adiciona borda.
+`border-4`  adiciona borda:
 
 ```css
 border-width: 4px;
 ```
 
----
+`border-slate-700` define a cor da borda:
 
-### `border-slate-700`
-
-Define a cor da borda.
-
----
-
-### `p-1`
-
-Adiciona espaço interno.
+`p-1` adiciona espaço interno:
 
 ```css
 padding: 4px;
 ```
 
----
-
-### `mx-auto`
-
-Centraliza horizontalmente.
+`mx-auto` centraliza horizontalmente:
 
 - `mx` = margem horizontal
 - `auto` = cálculo automático
@@ -357,7 +313,6 @@ margin-left: auto;
 margin-right: auto;
 ```
 
----
 
 # Passo 6 — Criando subtítulos
 
@@ -385,27 +340,16 @@ Os subtítulos ajudam a separar seções.
 
 ## Explicando cada comando
 
-### `text-2xl`
+`text-2xl` define o tamanho da fonte;
 
-Define o tamanho da fonte.
-
----
-
-### `font-semibold`
-
-Aplica um peso intermediário.
+`font-semibold` aplica um peso intermediário:
 
 ```css
 font-weight: 600;
 ```
 
----
+`text-slate-700` define a cor do texto:
 
-### `text-slate-700`
-
-Define a cor do texto.
-
----
 
 # Passo 7 — Criando a lista de interesses
 
@@ -433,23 +377,15 @@ Define a cor do texto.
 
 ## Explicando cada comando
 
-### `bg-slate-100`
+`bg-slate-100` cor de fundo clara:
 
-Cor de fundo clara.
-
----
-
-### `p-4`
-
-Adiciona padding.
+`p-4` adiciona padding.
 
 ```css
 padding: 16px;
 ```
 
----
-
-### `rounded-lg`
+`rounded-lg`
 
 Arredonda bordas.
 
@@ -485,17 +421,9 @@ Hover é o efeito que acontece quando o mouse passa sobre um elemento.
 
 ## Explicando cada comando
 
-### `hover:`
+`hover:`  indica um estado especial. Esse estilo só será aplicado quando o mouse estiver sobre o elemento.
 
-Indica um estado especial.
-
-Esse estilo só será aplicado quando o mouse estiver sobre o elemento.
-
----
-
-### `text-red-500`
-
-Muda a cor do texto.
+`text-red-500` muda a cor do texto.
 
 ---
 
@@ -542,7 +470,7 @@ Muda a cor do texto.
 
 ---
 
-# 🎯 Resumo Didático
+# Resumo Didático
 
 ## CSS tradicional
 
@@ -566,7 +494,7 @@ Permite:
 
 ---
 
-# 🧠 Dica importante
+# Dica importante
 
 No começo, as classes podem parecer grandes.
 
