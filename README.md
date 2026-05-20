@@ -12,5 +12,7 @@
 
 [Roteiro — Introdução ao DJango](roteiro-django-projeto-inicial.md)
 
+[Roteiro — Criando modelos e rotas com DJango](roteiro-django-projeto-inicial.md)
+
 
 
