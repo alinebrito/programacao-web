@@ -10,4 +10,7 @@
 
 [Roteiro — Introdução ao Tailwind CSS](roteiro-tailwind.md)
 
+[Roteiro — Introdução ao DJango](roteiro-django-projeto-inicial.md)
+
+
 
