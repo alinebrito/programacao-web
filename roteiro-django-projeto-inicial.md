@@ -27,8 +27,6 @@ através do painel administrativo do Django.
 13. [Configurar as URLs](#13-configurar-as-urls)
 14. [Criar o template HTML com Tailwind](#14-criar-o-template-html-com-tailwind)
 15. [Aplicar as migrations e subir o servidor](#15-aplicar-as-migrations-e-subir-o-servidor)
-16. [Criar o usuário admin e cadastrar mensagens](#16-criar-o-usuário-admin-e-cadastrar-mensagens)
-17. [Para experimentar em aula](#17-para-experimentar-em-aula)
 
 ---
 
@@ -536,117 +534,16 @@ cabeçalho "Olá, Django + Tailwind!" e a seção dizendo "Nenhuma mensagem aind
 docker compose down
 ```
 
----
+Resultado esperado da página web:
 
-## 16. Criar o usuário admin e cadastrar mensagens
+<img src="imagens/page-tutorial-django-parte1.png" alt="Tutorial Django Parte 1" width="600">
 
-Com o servidor rodando, **abra um segundo terminal** na mesma pasta e execute:
+# 16. ENTREGA
 
-```bash
-docker compose exec web python manage.py createsuperuser
-```
+Execute esse roteiro e versione o código em um repositório GitHub.
 
-Informe um nome de usuário, e-mail (opcional) e senha. Em seguida:
+Em seguida, mova o código para um branch de nome `bcc481-django-parte1`.
 
-1. Acesse **http://localhost:8000/admin/**.
-2. Faça login com o usuário criado.
-3. Clique em **Mensagens → Adicionar**.
-4. Preencha título e conteúdo e salve.
-5. Volte a **http://localhost:8000/** — sua mensagem aparece na lista.
+Submeta o link para o branch criado na issue disponível no repositório.
 
-🎉 **Parabéns!** Você acabou de construir um site completo com modelo, view,
-template, banco de dados e admin.
-
----
-
-## 17. Para experimentar em aula
-
-Algumas modificações para fixar o conteúdo:
-
-- **Adicionar um campo no modelo** (ex.: `autor = models.CharField(max_length=80)`):
-  ```bash
-  docker compose run --rm web python manage.py makemigrations
-  docker compose run --rm web python manage.py migrate
-  ```
-  Depois mostre o novo campo no template (`{{ m.autor }}`).
-
-- **Mudar o visual:** edite as classes Tailwind em `templates/home/index.html`.
-  Troque `from-slate-900 via-indigo-900` por outro gradiente, por exemplo.
-
-- **Criar uma nova página** (ex.: `/sobre/`):
-  1. Adicione uma função em `home/views.py`:
-     ```python
-     def sobre(request):
-         return render(request, "home/sobre.html")
-     ```
-  2. Adicione a rota em `home/urls.py`:
-     ```python
-     path("sobre/", views.sobre, name="sobre"),
-     ```
-  3. Crie `templates/home/sobre.html`.
-
-- **Filtrar mensagens** na view: troque `Mensagem.objects.all()` por
-  `Mensagem.objects.filter(titulo__icontains="oi")` e veja só as que contêm "oi"
-  no título.
-
----
-
-## Fluxo MTV (Model–Template–View)
-
-Resumo do que acontece quando alguém acessa `http://localhost:8000/`:
-
-```
-Navegador
-   ↓
-core/urls.py        →  encaminha "/" para o app home
-   ↓
-home/urls.py        →  encaminha "" para a view index
-   ↓
-home/views.py       →  consulta o banco via models.py
-   ↓
-home/models.py      →  ORM converte para SQL no SQLite
-   ↓
-templates/home/index.html  →  renderiza o HTML com os dados
-   ↓
-HTML pronto         →  navegador exibe a página
-```
-
-Esse é o **padrão MTV** do Django (equivalente ao MVC clássico):
-
-- **Model** = `home/models.py` (estrutura dos dados).
-- **Template** = `templates/home/index.html` (apresentação).
-- **View** = `home/views.py` (lógica que junta dados + template).
-
----
-
-## Estrutura final do projeto
-
-```
-demo-django/
-├── core/
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-├── home/
-│   ├── migrations/
-│   │   ├── __init__.py
-│   │   └── 0001_initial.py
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── urls.py
-│   └── views.py
-├── templates/
-│   └── home/
-│       └── index.html
-├── .dockerignore
-├── .gitignore
-├── docker-compose.yml
-├── Dockerfile
-├── manage.py
-├── README.md
-└── requirements.txt
-```
+**ATENÇÃO**: A submissão deve incluir um link para o branch. O branch principal será evoluído nos próximos roteiros.
