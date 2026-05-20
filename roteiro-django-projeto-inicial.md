@@ -5,8 +5,6 @@ Este roteiro é um **passo a passo** para você construir, do zero, o projeto
 com **Tailwind CSS** (via CDN), salvando dados em **SQLite** e executado dentro
 de um container **Docker**.
 
-Ao final, você terá uma página inicial que lista mensagens cadastradas no banco
-através do painel administrativo do Django.
 
 ---
 
