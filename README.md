@@ -3,7 +3,6 @@
 
 [Roteiro — Primeiros passos com CSS](roteiro-primeiros-passos-css.md)
 
-
 [Roteiro — Minha primeira página pessoal](roteiro-minha-primeira-home-page.md)
 
 [Roteiro — Estilizando minha página pessoal](roteiro-estilos-e-seletores.md)
@@ -13,6 +12,9 @@
 [Roteiro — Introdução ao DJango](roteiro-django-projeto-inicial.md)
 
 [Roteiro — Criando modelos e rotas com DJango](roteiro-django-projeto-parte-2.md)
+
+[Roteiro — Criando modelos e relacionamento com DJango](roteiro-django-projeto-parte-3.md)
+
 
 
 
