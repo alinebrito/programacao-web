@@ -15,6 +15,9 @@
 
 [Roteiro — Criando modelos e relacionamento com DJango](roteiro-django-projeto-parte-3.md)
 
+[Roteiro — Criando modelos e relacionamento muitos-para-muitos com DJango](roteiro-django-projeto-parte-4.md)
+
+
 
 
 

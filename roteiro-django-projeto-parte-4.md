@@ -1,4 +1,4 @@
-# Roteiro — Construindo um site com Django + Tailwind + Docker
+# Roteiro —  Criando modelos e relacionamento muitos-para-muitos com DJango
 
 Esta é a **parte 4** do roteiro de evolução do projeto `demo-django`. Nas etapas
 anteriores você criou o app, registrou mensagens pelo painel administrativo,
