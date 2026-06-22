@@ -1,4 +1,4 @@
-# Roteiro — Construindo um site com Django + Tailwind + Docker
+# Roteiro — Criando modelos e relacionamento com DJango
 
 Esta é a continuação do roteiro para você construir, do zero, o projeto
 `demo-django`: um site simples de uma página, escrito em **Django**, estilizado
