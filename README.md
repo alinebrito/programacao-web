@@ -17,7 +17,8 @@
 
 [Roteiro — Criando modelos e relacionamento muitos-para-muitos com DJango](roteiro-django-projeto-parte-4.md)
 
+[Roteiro — Formulário HTML e o ciclo CRUD com Django](roteiro-django-projeto-parte-5.md)
 
-
+[Roteiro — Editar e remover: finalizando o ciclo CRUD com Django](roteiro-django-projeto-parte-6.md)
 
 
