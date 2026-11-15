@@ -64,7 +64,6 @@
                         <li class="border-l-2 border-emerald-400 pl-4 py-1">
                             <h3 class="font-semibold">{{ m.titulo }}</h3>
                             <p class="text-sm text-slate-300">{{ m.conteudo }}</p>
-                            <span class="text-xs text-slate-400">por {{ m.autor }}</span>
                             <span class="text-xs text-slate-500">{{ m.criada_em|date:"d/m/Y H:i" }}</span>
                         </li>
                     {% endfor %}
@@ -79,7 +78,7 @@
     </main>
 
     <footer class="container mx-auto px-6 py-12 text-center text-slate-500 text-sm">
-        Feito para a aula de Programação Web · Django {{ '5.1' }}
+        Feito para a aula de Programação Web · Django 5.1
     </footer>
 
 </body>
