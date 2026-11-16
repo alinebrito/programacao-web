@@ -36,7 +36,7 @@
 
 ### Descrição
 
-Continuação do projeto Django desenvolvido nos roteiros anteriores, com implementação de modelos, relacionamento entre mensagens e categorias e atualização do painel administrativo.
+Continuação do projeto Django desenvolvido nos roteiros anteriores, com implementação de modelos, relacionamento entre mensagens e categorias e atualização do painel administrativo, assim como relacionamento N:N
 
 ### Funcionalidades implementadas
 
@@ -45,5 +45,6 @@ Continuação do projeto Django desenvolvido nos roteiros anteriores, com implem
 - Identificação do autor da mensagem.
 - Filtro de mensagens por categoria no painel administrativo.
 - Migração do banco de dados para os novos modelos e campos.
+- Relacionamentos
 
 
