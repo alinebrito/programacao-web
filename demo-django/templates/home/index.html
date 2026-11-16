@@ -62,11 +62,25 @@
                 <ul class="space-y-3">
                     {% for m in mensagens %}
                         <li class="border-l-2 border-emerald-400 pl-4 py-1">
-                            <h3 class="font-semibold">{{ m.titulo }}</h3>
-                            <p class="text-sm text-slate-300">{{ m.conteudo }}</p>
-                            <span class="text-xs text-slate-400">por {{ m.autor }}</span>
-                            <span class="text-xs text-slate-500">{{ m.criada_em|date:"d/m/Y H:i" }}</span>
-                        </li>
+    <h3 class="font-semibold">{{ m.titulo }}</h3>
+    {% if m.categoria %}
+        <span class="inline-block px-2 py-0.5 mt-1 bg-indigo-500/20 text-indigo-300 text-xs rounded-full">
+            {{ m.categoria.nome }}
+        </span>
+    {% endif %}
+    <p class="text-sm text-slate-300">{{ m.conteudo }}</p>
+    {% if m.tags.all %}                                          {# ← novo #}
+        <div class="flex flex-wrap gap-1 mt-1">
+            {% for tag in m.tags.all %}
+                <span class="inline-block px-2 py-0.5 bg-emerald-500/15 text-emerald-300 text-xs rounded">
+                    #{{ tag.nome }}
+                </span>
+            {% endfor %}
+        </div>
+    {% endif %}
+    <span class="text-xs text-slate-400">por {{ m.autor }}</span>
+    <span class="text-xs text-slate-500">{{ m.criada_em|date:"d/m/Y H:i" }}</span>
+</li>
                     {% endfor %}
                 </ul>
             {% else %}
@@ -79,7 +93,7 @@
     </main>
 
     <footer class="container mx-auto px-6 py-12 text-center text-slate-500 text-sm">
-        Feito para a aula de Programação Web · Django {{ '5.1' }}
+        Feito para a aula de Programação Web · Django 5.1
     </footer>
 
 </body>

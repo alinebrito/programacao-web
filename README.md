@@ -22,3 +22,28 @@
 [Roteiro — Editar e remover: finalizando o ciclo CRUD com Django](roteiro-django-projeto-parte-6.md)
 
 
+---
+
+## Entrega — Roteiro 3: Django
+
+**Aluno:** Estefanio Miko Engonga Bindang
+
+**Curso:** Ciência da Computação
+
+**Instituição:** Universidade Federal de Ouro Preto (UFOP)
+
+**Disciplina:** Programação Web
+
+### Descrição
+
+Continuação do projeto Django desenvolvido nos roteiros anteriores, com implementação de modelos, relacionamento entre mensagens e categorias e atualização do painel administrativo.
+
+### Funcionalidades implementadas
+
+- Cadastro e organização de categorias.
+- Associação de mensagens às categorias.
+- Identificação do autor da mensagem.
+- Filtro de mensagens por categoria no painel administrativo.
+- Migração do banco de dados para os novos modelos e campos.
+
+
